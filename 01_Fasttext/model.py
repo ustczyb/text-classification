@@ -14,5 +14,8 @@ class Fasttext(object):
         self.model.add(layers.Dense(units=1, activation='sigmoid'))
         # 损失和优化器选择
         self.model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+        self.model.summary()
 
-    def
+
+    def train(self, train_X, train_y, batch_size, epoch):
+        self.model.fit(train_X, train_y, )
