@@ -107,7 +107,7 @@ class ZhStopWordRemover(StopWordRemover):
     中文停用词去除
     """
 
-    def __init__(self, stopword_file='/Users/zyb/code/text-classification/utils/stopwords-master/hit_stopwords.txt'):
+    def __init__(self, stopword_file='/Users/zhangyubo15/PycharmProjects/text-classification/utils/stopwords-master/hit_stopwords.txt'):
         self.stop_words = set()
         with open(stopword_file, 'r') as f:
             words = f.readlines()
